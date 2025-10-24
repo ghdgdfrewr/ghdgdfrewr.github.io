@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="text-center p-6 bg-orange-50 rounded-2xl">
             <i class="fas fa-gamepad text-4xl text-primary mb-3"></i>
             <h3 class="font-bold text-xl">Game Developer</h3>
-            <p class="text-gray-600">Unity 2D, C#, Pixel Art</p>
+            <p class="text-gray-600">Unity 3D, Basic Game, Pixel Art</p>
           </div>
           <div class="text-center p-6 bg-orange-50 rounded-2xl">
             <i class="fas fa-laptop-code text-4xl text-primary mb-3"></i>
             <h3 class="font-bold text-xl">Full Stack</h3>
-            <p class="text-gray-600">React, Node.js, SQL Server</p>
+            <p class="text-gray-600">HTML, JavaScript, Node.js, SQL Server</p>
           </div>
           <div class="text-center p-6 bg-orange-50 rounded-2xl">
             <i class="fas fa-paint-brush text-4xl text-primary mb-3"></i>
@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <h2 class="text-3xl font-bold mb-6">Kinh nghiệm</h2>
         <div class="space-y-6">
           <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-xl font-bold">FigureVerse</h3>
-            <p class="text-gray-600">Game 2D platformer – Unity, C#</p>
+            <h3 class="text-xl font-bold">Snake Game</h3>
+            <p class="text-gray-600">Game basic – HTML</p>
           </div>
           <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-xl font-bold">Chaos Swarm</h3>
-            <p class="text-gray-600">Game bắn súng top-down – Pixel Art, AI</p>
+            <h3 class="text-xl font-bold">Websiite học tiếng Anh</h3>
+            <p class="text-gray-600">Học tập, nâng cao trình độ anh ngữ – ASP Net Core, AI</p>
           </div>
         </div>
       `,
@@ -80,8 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-gray-600">Cử nhân Công nghệ Thông tin – 2022–2026</p>
           </div>
           <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-xl font-bold">IBM SkillsBuild</h3>
-            <p class="text-gray-600">Khóa học AI, Cloud Computing</p>
+            <h3 class="text-xl font-bold">Developer tại nhà</h3>
+            <p class="text-gray-600">Khóa học AI, Cloud Computing, Netacad</p>
+          </div>
+          <div class="border-l-4 border-primary pl-6">
+            <h3 class="text-xl font-bold">Ielts learner tại Lisa Center</h3>
+            <p class="text-gray-600">Ielts, English, Target 8.5</p>
           </div>
         </div>
       `,
