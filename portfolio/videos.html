@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Java & JS - Phạm Đức Huy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { primary: '#d2691e' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 text-gray-800 min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 shadow-2xl z-50">
+    <div class="text-center mb-10">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Phạm Đức Huy</h1>
+      <p class="text-sm text-gray-300 mt-1">Frontend Developer</p>
+    </div>
+    <nav class="space-y-2">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-home"></i> Trang chủ
+      </a>
+      допуска<a href="introduce.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-user"></i> Giới thiệu
+      </a>
+      <a href="projects.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-project-diagram"></i> Dự án
+      </a>
+      <a href="blog.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-blog"></i> Blog
+      </a>
+      <a href="videos.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white font-medium transition-all hover:shadow-lg">
+        <i class="fas fa-video"></i> Videos
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-envelope"></i> Liên hệ
+      </a>
+    </nav>
+    <div class="mt-10 pt-6 border-t border-white/20 flex gap-4 justify-center">
+      <a href="https://github.com/hihiasdasd" target="_blank" class="text-2xl hover:text-primary transition-colors">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:phamduchuy1011@gmail.com" class="text-2xl hover:text-primary transition-colors">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-8 lg:p-16">
+    <a href="index.html" class="inline-flex items-center gap-2 text-primary font-semibold mb-8 hover:underline transition-all back-btn">
+      <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+    </a>
+
+    <header class="text-center mb-16">
+      <h1 class="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">
+        Video Java & JavaScript
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Tổng hợp video học tập và meme vui nhộn về Java & JavaScript – vừa học vừa cười!
+      </p>
+    </header>
+
+    <!-- Video Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- Video 1 -->
+      <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/PkZNo7MFNFg/maxresdefault.jpg" alt="Java in 100 Seconds" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-orange-100 text-primary rounded-full text-xs font-bold">Java</span>
+            <span class="text-xs text-gray-500">• 2:20</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Java in 100 Seconds
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            Tổng quan siêu nhanh về Java – từ lịch sử đến ứng dụng!
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 2 -->
+      <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/8aGhZQkoFbQ/maxresdefault.jpg" alt="JavaScript in 100 Seconds" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold">JS</span>
+            <span class="text-xs text-gray-500">• 2:20</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            JavaScript in 100 Seconds
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            JS là gì? Tại sao nó "thống trị" web?
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 3 -->
+      <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/Ke90Tje7VS0/maxresdefault.jpg" alt="Java vs JavaScript" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">MEME</span>
+            <span class="text-xs text-gray-500">• 1:00</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Java vs JavaScript – Ai thắng?
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            Meme vui: "Java và JavaScript có liên quan không?"
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 4 -->
+      <a href="https://www.youtube.com/watch?v=1S8f5z4h1dI" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/1S8f5z4h1dI/maxresdefault.jpg" alt="NullPointerException Meme" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-orange-100 text-primary rounded-full text-xs font-bold">Java</span>
+            <span class="text-xs text-gray-500">• 0:30</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Khi bạn quên kiểm tra null
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            NullPointerException – cơn ác mộng của Java dev!
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 5 -->
+      <a href="https://www.youtube.com/watch?v=6avJHaC3C2U" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/6avJHaC3C2U/maxresdefault.jpg" alt="JavaScript is Weird" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold">JS</span>
+            <span class="text-xs text-gray-500">• 5:12</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            10 điều kỳ lạ nhất trong JavaScript
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            `[] + {} === {} + []` → kết quả là gì?
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 6 -->
+      <a href="https://www.youtube.com/watch?v=9qFcw2g6tzo" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/9qFcw2g6tzo/maxresdefault.jpg" alt="Java OOP Meme" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">MEME</span>
+            <span class="text-xs text-gray-500">• 0:45</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Khi bạn học OOP Java quá kỹ
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            "Tất cả đều là object... kể cả cái bàn!"
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 7 -->
+      <a href="https://www.youtube.com/watch?v=3CUjtKJ7PIg" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/3CUjtKJ7PIg/maxresdefault.jpg" alt="this in JavaScript" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold">JS</span>
+            <span class="text-xs text-gray-500">• 8:45</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Hiểu `this` trong JavaScript trong 8 phút
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            Giải thích rõ ràng với ví dụ thực tế.
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 8 -->
+      <a href="https://www.youtube.com/watch?v=1S8f5z4h1dI" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/1S8f5z4h1dI/maxresdefault.jpg" alt="Java Memory Leak" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-orange-100 text-primary rounded-full text-xs font-bold">Java</span>
+            <span class="text-xs text-gray-500">• 1:15</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Khi Java ăn hết RAM
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            Meme: "JVM: Tôi cần 16GB để chạy Hello World"
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 9 -->
+      <a href="https://www.youtube.com/watch?v=8dWL3wF1POk" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/8dWL3wF1POk/maxresdefault.jpg" alt="JavaScript Async Await" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold">JS</span>
+            <span class="text-xs text-gray-500">• 10:20</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Async/Await vs Promise – Dễ hiểu
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            So sánh trực quan, dễ nhớ.
+          </p>
+        </div>
+      </a>
+
+      <!-- Video 10 -->
+      <a href="https://www.youtube.com/watch?v=9qFcw2g6tzo" target="_blank" class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <img src="https://img.youtube.com/vi/9qFcw2g6tzo/maxresdefault.jpg" alt="Java Developer Meme" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">MEME</span>
+            <span class="text-xs text-gray-500">• 0:50</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+            Java Dev khi thấy JS dev dùng var
+          </h3>
+          <p class="text-sm text-gray-600 line-clamp-2">
+            "Biến toàn cục? Thật sao?!"
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="text-center mt-16 p-8 bg-gradient-to-r from-primary to-orange-600 text-white rounded-3xl">
+      <h2 class="text-3xl font-bold mb-4">Thích video của mình?</h2>
+      <p class="text-lg mb-6">Hãy subscribe kênh YouTube để xem thêm!</p>
+      <a href="https://youtube.com" target="_blank" class="inline-block px-8 py-3 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-all">
+        Xem kênh YouTube
+      </a>
+    </section>
+  </main>
+
+  <!-- Back Button Script -->
+  <script>
+    document.querySelectorAll('.back-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        history.back();
+      });
+    });
+  </script>
+</body>
+</html>
