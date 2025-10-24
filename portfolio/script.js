@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `,
 
-      // TAB MỚI: CHỨNG CHỈ CISCO
       certificates: `
         <h2 class="text-3xl font-bold mb-6">Chứng chỉ Cisco Networking Academy</h2>
         <p class="text-lg text-gray-600 mb-8">
