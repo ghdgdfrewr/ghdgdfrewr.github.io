@@ -8,84 +8,252 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <script>
-    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { primary: '#d2691e' } } } }
+    tailwind.config = { 
+      theme: { 
+        extend: { 
+          fontFamily: { sans: ['Inter', 'sans-serif'] }, 
+          colors: { primary: '#d2691e' } 
+        } 
+      } 
+    }
   </script>
 </head>
 <body class="bg-gradient-to-br from-amber-50 to-orange-50 text-gray-800">
 
   <!-- Sidebar -->
-<aside id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 shadow-2xl z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
-  <!-- Hamburger Button (Mobile Only) -->
-  <button id="close-sidebar" class="lg:hidden absolute top-6 right-6 text-white text-2xl hover:text-primary transition-colors">
-    <i class="fas fa-times"></i>
+  <aside id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 shadow-2xl z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+    <button id="close-sidebar" class="lg:hidden absolute top-6 right-6 text-white text-2xl hover:text-primary transition-colors">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="text-center mb-10">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Phạm Đức Huy</h1>
+      <p class="text-sm text-gray-300 mt-1">Frontend Developer</p>
+    </div>
+
+    <nav class="space-y-2">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-home"></i> Trang chủ
+      </a>
+      <a href="introduce.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white font-medium">
+        <i class="fas fa-user"></i> Giới thiệu
+      </a>
+      <a href="projects.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-project-diagram"></i> Dự án
+      </a>
+      <a href="blog.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-blog"></i> Blog
+      </a>
+      <a href="videos.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-video"></i> Videos
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-envelope"></i> Liên hệ
+      </a>
+    </nav>
+
+    <div class="mt-10 pt-6 border-t border-white/20 flex gap-4 justify-center">
+      <a href="https://github.com/hihiasdasd" target="_blank" class="text-2xl hover:text-primary transition-colors">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:phamduchuy1011@gmail.com" class="text-2xl hover:text-primary transition-colors">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Hamburger Button -->
+  <button id="open-sidebar" class="lg:hidden fixed top-6 left-6 z-50 text-primary text-2xl bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all">
+    <i class="fas fa-bars"></i>
   </button>
-
-  <div class="text-center mb-10">
-    <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Phạm Đức Huy</h1>
-    <p class="text-sm text-gray-300 mt-1">Frontend Developer</p>
-  </div>
-
-  <nav class="space-y-2">
-    <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
-      <i class="fas fa-home"></i> Trang chủ
-    </a>
-    <a href="introduce.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
-      <i class="fas fa-user"></i> Giới thiệu
-    </a>
-    <a href="projects.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/ace transition-all">
-      <i class="fas fa-project-diagram"></i> Dự án
-    </a>
-    <a href="blog.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
-      <i class="fas fa-blog"></i> Blog
-    </a>
-    <a href="videos.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
-      <i class="fas fa-video"></i> Videos
-    </a>
-    <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
-      <i class="fas fa-envelope"></i> Liên hệ
-    </a>
-  </nav>
-
-  <div class="mt-10 pt-6 border-t border-white/20 flex gap-4 justify-center">
-    <a href="https://github.com/hihiasdasd" target="_blank" class="text-2xl hover:text-primary transition-colors">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:phamduchuy1011@gmail.com" class="text-2xl hover:text-primary transition-colors">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-</aside>
-
-<!-- Hamburger Menu Button (Chỉ hiện trên mobile) -->
-<button id="open-sidebar" class="lg:hidden fixed top-6 left-6 z-50 text-primary text-2xl bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all">
-  <i class="fas fa-bars"></i>
-</button>
 
   <!-- Main Content -->
   <main class="lg:ml-64 p-6 lg:p-16 transition-all duration-300">
-    <a href="index.html" class="inline-flex items-center gap-2 text-primary font-semibold mb-8 hover:underline">
+    <a href="index.html" class="inline-flex items-center gap-2 text-primary font-semibold mb-8 hover:underline back-btn">
       <i class="fas fa-arrow-left"></i> Quay lại trang chủ
     </a>
 
-    <h1 class="text-5xl font-bold text-center mb-16">Giới thiệu bản thân</h1>
+    <h1 class="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">
+      Giới thiệu bản thân
+    </h1>
 
     <!-- Tabs -->
     <div class="max-w-5xl mx-auto">
       <div class="flex justify-center gap-4 mb-12 flex-wrap" id="tab-buttons">
-        <button data-tab="about" class="tab-btn active px-6 py-3 rounded-full bg-primary text-white font-medium">Về tôi</button>
-        <button data-tab="skills" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300">Kỹ năng</button>
-        <button data-tab="experience" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300">Kinh nghiệm</button>
-        <button data-tab="education" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300">Học vấn</button>
-        <button data-tab="certificates" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300">Chứng chỉ</button>
+        <button data-tab="about" class="tab-btn active px-6 py-3 rounded-full bg-primary text-white font-medium transition-all">Về tôi</button>
+        <button data-tab="skills" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-all">Kỹ năng</button>
+        <button data-tab="experience" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-all">Kinh nghiệm</button>
+        <button data-tab="education" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-all">Học vấn</button>
+        <button data-tab="certificates" class="tab-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-all">Chứng chỉ</button>
       </div>
 
       <!-- Tab Content -->
-      <div id="tab-content" class="bg-white p-10 rounded-3xl shadow-2xl">
-        <!-- Nội dung sẽ được JS chèn -->
+      <div id="tab-content" class="bg-white p-10 rounded-3xl shadow-2xl min-h-96">
+        <p class="text-center text-gray-500">Đang tải nội dung...</p>
       </div>
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <!-- JS CHUNG -->
+  <script>
+    // ===== SIDEBAR MOBILE =====
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar');
+      const openBtn = document.getElementById('open-sidebar');
+      const closeBtn = document.getElementById('close-sidebar');
+
+      if (openBtn && closeBtn && sidebar) {
+        openBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          sidebar.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+          sidebar.classList.add('-translate-x-full');
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!sidebar.contains(e.target) && !openBtn.contains(e.target) && !sidebar.classList.contains('-translate-x-full')) {
+            sidebar.classList.add('-translate-x-full');
+          }
+        });
+      }
+
+      // ===== TABS SYSTEM =====
+      const tabs = {
+        about: `
+          <h2 class="text-3xl font-bold mb-6">Về tôi</h2>
+          <p class="text-lg leading-relaxed mb-8">
+            Tôi là một lập trình viên Full Stack trong lĩnh vực phát triển phần mềm. 
+            Tôi có đam mê tạo ra những sản phẩm digital chất lượng cao và luôn tìm kiếm những thử thách mới.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center p-6 bg-orange-50 rounded-2xl">
+              <i class="fas fa-gamepad text-4xl text-primary mb-3"></i>
+              <h3 class="font-bold text-xl">Game Developer</h3>
+              <p class="text-gray-600">Unity 3D, Basic Game, Pixel Art</p>
+            </div>
+            <div class="text-center p-6 bg-orange-50 rounded-2xl">
+              <i class="fas fa-laptop-code text-4xl text-primary mb-3"></i>
+              <h3 class="font-bold text-xl">Full Stack</h3>
+              <p class="text-gray-600">HTML, JavaScript, Node.js, SQL Server</p>
+            </div>
+            <div class="text-center p-6 bg-orange-50 rounded-2xl">
+              <i class="fas fa-paint-brush text-4xl text-primary mb-3"></i>
+              <h3 class="font-bold text-xl">UI/UX</h3>
+              <p class="text-gray-600">Design, Responsive, Figma</p>
+            </div>
+          </div>
+        `,
+
+        skills: `
+          <h2 class="text-3xl font-bold mb-6">Kỹ năng chuyên môn</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4 text-primary">Frontend</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">ReactJS</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">JavaScript</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">HTML5</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">CSS3</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">Tailwind CSS</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-4 text-primary">Backend & Tools</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">Node.js</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">Express</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">SQL Server</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">Git</span>
+                <span class="px-4 py-2 bg-orange-100 text-primary rounded-full text-sm font-medium">VS Code</span>
+              </div>
+            </div>
+          </div>
+        `,
+
+        experience: `
+          <h2 class="text-3xl font-bold mb-6">Kinh nghiệm</h2>
+          <div class="space-y-6">
+            <div class="border-l-4 border-primary pl-6">
+              <h3 class="text-xl font-bold">Snake Game</h3>
+              <p class="text-gray-600">Game basic – HTML</p>
+            </div>
+            <div class="border-l-4 border-primary pl-6">
+              <h3 class="text-xl font-bold">Website học tiếng Anh</h3>
+              <p class="text-gray-600">Học tập, nâng cao trình độ anh ngữ – ASP Net Core, AI</p>
+            </div>
+          </div>
+        `,
+
+        education: `
+          <h2 class="text-3xl font-bold mb-6">Học vấn</h2>
+          <div class="space-y-6">
+            <div class="border-l-4 border-primary pl-6">
+              <h3 class="text-xl font-bold">Đại học Công nghệ TP.HCM (HUTECH)</h3>
+              <p class="text-gray-600">Cử nhân Công nghệ Thông tin – 2022–2026</p>
+            </div>
+            <div class="border-l-4 border-primary pl-6">
+              <h3 class="text-xl font-bold">Developer tại nhà</h3>
+              <p class="text-gray-600">Khóa học AI, Cloud Computing, Netacad</p>
+            </div>
+            <div class="border-l-4 border-primary pl-6">
+              <h3 class="text-xl font-bold">Ielts learner tại Lisa Center</h3>
+              <p class="text-gray-600">Ielts, English, Target 8.5</p>
+            </div>
+          </div>
+        `,
+
+        certificates: `
+          <h2 class="text-3xl font-bold mb-6">Chứng chỉ Cisco Networking Academy</h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Các chứng chỉ chính thức từ Cisco, được xác minh trên Credly.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-white to-orange-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div class="flex items-center gap-4 mb-3">
+                <img src="https://images.credly.com/images/fc150033-91c3-4289-a541-f5839f1dd59d/networking-basics.png" 
+                     alt="Networking Basics" class="w-20 h-20 object-contain rounded-lg shadow-md" 
+                     onerror="this.src='https://via.placeholder.com/80?text=NET'">
+                <div>
+                  <h3 class="font-bold text-lg">
+                    <a href="https://www.credly.com/badges/fc150033-91c3-4289-a541-f5839f1dd59d" target="_blank" 
+                       class="text-primary hover:underline">Networking Basics</a>
+                  </h3>
+                  <p class="text-sm text-gray-600">Cisco Networking Academy</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">Cơ bản về mạng: TCP/IP, OSI model, cấu hình router/switch.</p>
+              <p class="text-xs text-gray-500 mt-2">Cấp ngày: 2025</p>
+            </div>
+            <!-- Thêm 2 chứng chỉ khác -->
+          </div>
+        `
+      };
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tab-btn').forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-white');
+            b.classList.add('bg-gray-200', 'text-gray-700');
+          });
+          btn.classList.remove('bg-gray-200', 'text-gray-700');
+          btn.classList.add('active', 'bg-primary', 'text-white');
+          document.getElementById('tab-content').innerHTML = tabs[btn.dataset.tab] || '<p class="text-center text-gray-500">Chưa có nội dung.</p>';
+        });
+      });
+
+      // Load tab mặc định
+      document.querySelector('.tab-btn.active')?.click();
+    });
+
+    // Back button
+    document.querySelectorAll('.back-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        history.back();
+      });
+    });
+  </script>
 </body>
 </html>
