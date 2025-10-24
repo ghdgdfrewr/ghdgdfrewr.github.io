@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dự án - Phạm Đức Huy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { primary: '#d2691e' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 text-gray-800 min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 shadow-2xl z-50">
+    <div class="text-center mb-10">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Phạm Đức Huy</h1>
+      <p class="text-sm text-gray-300 mt-1">Frontend Developer</p>
+    </div>
+    <nav class="space-y-2">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-home"></i> Trang chủ
+      </a>
+      <a href="introduce.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-user"></i> Giới thiệu
+      </a>
+      <a href="projects.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white font-medium transition-all hover:shadow-lg">
+        <i class="fas fa-project-diagram"></i> Dự án
+      </a>
+      <a href="blog.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-blog"></i> Blog
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all">
+        <i class="fas fa-envelope"></i> Liên hệ
+      </a>
+    </nav>
+    <div class="mt-10 pt-6 border-t border-white/20 flex gap-4 justify-center">
+      <a href="https://github.com/hihiasdasd" target="_blank" class="text-2xl hover:text-primary transition-colors">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:phamduchuy1011@gmail.com" class="text-2xl hover:text-primary transition-colors">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-8 lg:p-16">
+    <a href="index.html" class="inline-flex items-center gap-2 text-primary font-semibold mb-8 hover:underline transition-all">
+      <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+    </a>
+
+    <header class="text-center mb-16">
+      <h1 class="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">
+        Dự Án Nổi Bật
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Những sản phẩm thực tế mình đã xây dựng với đam mê và công nghệ hiện đại.
+      </p>
+    </header>
+
+    <!-- Projects Grid -->
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Dự án 1: Snake Game -->
+      <article class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+        <img src="https://ghdgdfrewr.github.io/snake-game/snake-game.png" 
+             alt="Snake Game" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Snake Game</h3>
+          <p class="text-gray-600 mb-4">Trò chơi Snake cổ điển với điểm số realtime, điều khiển bằng phím mũi tên, restart bằng R. Xây dựng bằng HTML5 Canvas + JavaScript thuần.</p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium">JavaScript</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Canvas</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">HTML5</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://ghdgdfrewr.github.io/snake-game/" target="_blank" class="text-primary font-semibold hover:underline">Live Demo</a>
+            <a href="#" class="text-primary font-semibold hover:underline">Code Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dự án 2: DoAnCoSo-Ielts-Website -->
+      <article class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+        <img src="https://via.placeholder.com/800x400?text=IELTS+Website" 
+             alt="IELTS Website" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">IELTS Practice Website</h3>
+          <p class="text-gray-600 mb-4">Đồ án cơ sở: Website học IELTS với bài thi thử, từ vựng, điểm số realtime. Xây dựng bằng HTML, CSS, JavaScript thuần – tập trung vào tính tương tác và responsive.</p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium">JavaScript</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">HTML/CSS</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Responsive</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/ghdgdfrewr/DoAnCoSo-Ielts-Website" target="_blank" class="text-primary font-semibold hover:underline">GitHub Repo</a>
+            <a href="#" class="text-primary font-semibold hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- CTA -->
+    <section class="text-center mt-16 p-8 bg-gradient-to-r from-primary to-orange-600 text-white rounded-3xl">
+      <h2 class="text-3xl font-bold mb-4">Thích dự án của mình?</h2>
+      <p class="text-lg mb-6">Hãy liên hệ để cùng xây dựng những sản phẩm tuyệt vời!</p>
+      <a href="contact.html" class="inline-block px-8 py-3 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-all">
+        Liên hệ ngay
+      </a>
+    </section>
+  </main>
+</body>
+</html>

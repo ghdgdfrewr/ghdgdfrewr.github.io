@@ -225,3 +225,7 @@ function backToList() {
   document.getElementById('blog-detail').classList.add('hidden');
   document.getElementById('blog-list').classList.remove('hidden');
 }
+// Fix tab-content undefined
+if (document.getElementById('tab-content')) {
+  // Nội dung tabs như cũ
+}
