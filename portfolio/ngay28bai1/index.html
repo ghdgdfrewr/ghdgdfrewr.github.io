@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ngày 28 - Bài 1: Hiển thị sản phẩm API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f8f9fa;
+    }
+    h1 { text-align: center; color: #2c3e50; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+      text-align: center;
+    }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      padding: 15px;
+      background: #fff;
+    }
+    .info { padding: 15px; }
+    .title { font-size: 1.1em; min-height: 2.8em; overflow: hidden; margin: 10px 0; }
+    .price { color: #c0392b; font-weight: bold; font-size: 1.4em; }
+    .category { color: #7f8c8d; font-size: 0.95em; }
+    .loading { text-align: center; font-size: 1.3em; color: #95a5a6; margin: 50px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Ngày 28 - Bài 1: Danh sách sản phẩm từ API</h1>
+  <div class="container">
+    <div class="loading" id="loading">Đang tải dữ liệu từ API...</div>
+    <div class="grid" id="products"></div>
+  </div>
+
+  <script>
+    const API = 'https://api.escuelajs.co/api/v1/products?offset=0&limit=15'; // Lấy 15 sp để trang load nhanh
+    const productsDiv = document.getElementById('products');
+    const loading = document.getElementById('loading');
+
+    fetch(API)
+      .then(res => {
+        if (!res.ok) throw new Error('Lỗi tải API: ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        loading.style.display = 'none';
+
+        data.forEach(product => {
+          const img = (product.images && product.images[0]) 
+            ? product.images[0].replace(/["\[\]]/g, '')  // Xử lý nếu images là string JSON
+            : 'https://placehold.co/400x300?text=No+Image';
+
+          const card = `
+            <div class="card">
+              <img src="${img}" alt="${product.title}" 
+                   onerror="this.src='https://placehold.co/400x300?text=Ảnh lỗi'">
+              <div class="info">
+                <div class="title">${product.title}</div>
+                <div class="price">$${product.price}</div>
+                <div class="category">${product.category?.name || 'Khác'}</div>
+              </div>
+            </div>`;
+          
+          productsDiv.innerHTML += card;
+        });
+      })
+      .catch(err => {
+        loading.innerHTML = `Lỗi: ${err.message}<br>Kiểm tra console (F12) hoặc mạng.`;
+        console.error(err);
+      });
+  </script>
+
+</body>
+</html>
